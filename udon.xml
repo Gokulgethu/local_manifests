@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Device Tree for OnePlus 11R 5G (udon / CPH2487) -->
-    <project name="Gokulgethu/android_device_oneplus_udon" path="device/oneplus/udon" remote="github" revision="lineage-21" />
+    <!-- Device Tree for OnePlus 11R 5G (udon / aston / CPH2487) -->
+    <project name="Gokulgethu/android_device_oneplus_udon" path="device/oneplus/udon" remote="github" revision="main" />
 
-    <!-- Common Device Tree (SM8450 / SM8475 Platform) -->
-    <project name="LineageOS/android_device_oneplus_sm8450-common" path="device/oneplus/sm8450-common" remote="github" revision="lineage-21.0" />
-
-    <!-- Kernel Source & GKI Modules -->
-    <project name="LineageOS/android_kernel_oneplus_sm8450" path="kernel/oneplus/sm8450" remote="github" revision="lineage-21.0" />
+    <!-- Real Proprietary Binary Vendor Trees -->
+    <project name="Gokulgethu/android_vendor_oneplus_udon" path="vendor/oneplus/udon" remote="github" revision="main" />
+    <project name="Gokulgethu/vendor_oneplus_CPH2487" path="vendor/oneplus/CPH2487" remote="github" revision="main" />
+    <project name="Gokulgethu/android_vendor_oneplus_sm8450-common" path="vendor/oneplus/sm8450-common" remote="github" revision="main" />
 
     <!-- Hardware OPlus HAL Additions -->
     <project name="LineageOS/android_hardware_oplus" path="hardware/oplus" remote="github" revision="lineage-21" />
