@@ -27,6 +27,9 @@
              path="kernel/oneplus/sm8450" remote="github" revision="main" />
     <project name="Gokulgethu/android_hardware_oplus"
              path="hardware/oplus" remote="github" revision="main" />
+    <!-- Portable Dolby Atmos (DAP/DaxUI) prebuilt package -->
+    <project name="Gokulgethu/hardware_dolby"
+             path="hardware/dolby" remote="github" revision="main" />
 
     <!-- Proprietary Vendor Blobs -->
     <project name="Gokulgethu/android_vendor_oneplus_udon"
