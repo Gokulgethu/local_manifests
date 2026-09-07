@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <!--
+        OnePlus 11R (udon / CPH2487, SM8475/taro)
+        Local manifest for crDroid / LineageOS / any AOSP-based ROM (Android 15/16).
+
+        All repos are pinned to the "main" branch which carries the complete,
+        build-ready trees (kernel-header soong fixes, guarded module lists,
+        modern lunch choices). Device BoardConfig is branch agnostic, so these
+        work for any current custom ROM.
+    -->
+
     <!-- Device Trees -->
-    <project name="Gokulgethu/android_device_oneplus_udon" path="device/oneplus/udon" remote="github" revision="lineage-21" />
-    <project name="Gokulgethu/android_device_oneplus_sm8450-common" path="device/oneplus/sm8450-common" remote="github" revision="lineage-21" />
+    <project name="Gokulgethu/android_device_oneplus_udon"
+             path="device/oneplus/udon" remote="github" revision="main" />
+    <project name="Gokulgethu/device_oneplus_CPH2487"
+             path="device/oneplus/CPH2487" remote="github" revision="main" />
+    <project name="Gokulgethu/android_device_oneplus_sm8475-common"
+             path="device/oneplus/sm8475-common" remote="github" revision="main" />
+    <project name="Gokulgethu/android_device_oneplus_sm8450-common"
+             path="device/oneplus/sm8450-common" remote="github" revision="main" />
 
     <!-- Kernel & Hardware Source -->
-    <project name="Gokulgethu/android_kernel_oneplus_sm8450" path="kernel/oneplus/sm8450" remote="github" revision="lineage-21" />
-    <project name="Gokulgethu/android_hardware_oplus" path="hardware/oplus" remote="github" revision="lineage-21" />
+    <project name="Gokulgethu/android_kernel_oneplus_sm8475"
+             path="kernel/oneplus/sm8475" remote="github" revision="main" />
+    <project name="Gokulgethu/android_kernel_oneplus_sm8450"
+             path="kernel/oneplus/sm8450" remote="github" revision="main" />
+    <project name="Gokulgethu/android_hardware_oplus"
+             path="hardware/oplus" remote="github" revision="main" />
 
-    <!-- Real Proprietary Vendor Blobs -->
-    <project name="Gokulgethu/android_vendor_oneplus_udon" path="vendor/oneplus/udon" remote="github" revision="lineage-21" />
-    <project name="Gokulgethu/vendor_oneplus_CPH2487" path="vendor/oneplus/CPH2487" remote="github" revision="lineage-21" />
-    <project name="Gokulgethu/android_vendor_oneplus_sm8450-common" path="vendor/oneplus/sm8450-common" remote="github" revision="lineage-21" />
-    <project name="Gokulgethu/android_vendor_oneplus_sm8475-common" path="vendor/oneplus/sm8475-common" remote="github" revision="lineage-21" />
+    <!-- Proprietary Vendor Blobs -->
+    <project name="Gokulgethu/android_vendor_oneplus_udon"
+             path="vendor/oneplus/udon" remote="github" revision="main" />
+    <project name="Gokulgethu/vendor_oneplus_CPH2487"
+             path="vendor/oneplus/CPH2487" remote="github" revision="main" />
+    <project name="Gokulgethu/android_vendor_oneplus_sm8475-common"
+             path="vendor/oneplus/sm8475-common" remote="github" revision="main" />
+    <project name="Gokulgethu/android_vendor_oneplus_sm8450-common"
+             path="vendor/oneplus/sm8450-common" remote="github" revision="main" />
 </manifest>
