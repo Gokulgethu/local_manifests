@@ -35,4 +35,11 @@
              path="vendor/oneplus/sm8475-common" remote="github" revision="main" />
     <project name="Gokulgethu/android_vendor_oneplus_sm8450-common"
              path="vendor/oneplus/sm8450-common" remote="github" revision="main" />
+
+    <!-- Kernel modules + device DTs (REQUIRED by the dts/vendor symlink fix;
+         without sm8450-devicetrees the vendor symlink cannot resolve -> no DTB/DTBO) -->
+    <project path="kernel/oneplus/sm8450-modules"
+             name="rocko5498/android_kernel_oneplus_sm8450-modules" remote="github" revision="lineage-23.1" />
+    <project path="kernel/oneplus/sm8450-devicetrees"
+             name="rocko5498/android_kernel_oneplus_sm8450-devicetrees" remote="github" revision="lineage-23.0" />
 </manifest>
