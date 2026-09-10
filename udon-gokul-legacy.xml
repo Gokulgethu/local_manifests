@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--
+        LEGACY: original Gokulgethu universal tree set (self-contained rework).
+        Preserved before switching the default wiring to the rocko5498 proven stack.
+        NOTE: this set cannot produce device DTB/DTBO (no qcom DTS / devicetrees repo).
+    -->
+
+    <!-- Device Trees -->
+    <project name="Gokulgethu/android_device_oneplus_udon"
+             path="device/oneplus/udon" remote="github" revision="main" />
+    <project name="Gokulgethu/device_oneplus_CPH2487"
+             path="device/oneplus/CPH2487" remote="github" revision="main" />
+    <project name="Gokulgethu/android_device_oneplus_sm8475-common"
+             path="device/oneplus/sm8475-common" remote="github" revision="main" />
+    <project name="Gokulgethu/android_device_oneplus_sm8450-common"
+             path="device/oneplus/sm8450-common" remote="github" revision="main" />
+
+    <!-- Kernel & Hardware Source -->
+    <project name="Gokulgethu/android_kernel_oneplus_sm8475"
+             path="kernel/oneplus/sm8475" remote="github" revision="main" />
+    <project name="Gokulgethu/android_kernel_oneplus_sm8450"
+             path="kernel/oneplus/sm8450" remote="github" revision="main" />
+    <project name="Gokulgethu/android_hardware_oplus"
+             path="hardware/oplus" remote="github" revision="main" />
+    <project name="Gokulgethu/hardware_dolby"
+             path="hardware/dolby" remote="github" revision="main" />
+
+    <!-- Proprietary Vendor Blobs -->
+    <project name="Gokulgethu/android_vendor_oneplus_udon"
+             path="vendor/oneplus/udon" remote="github" revision="main" />
+    <project name="Gokulgethu/vendor_oneplus_CPH2487"
+             path="vendor/oneplus/CPH2487" remote="github" revision="main" />
+    <project name="Gokulgethu/android_vendor_oneplus_sm8475-common"
+             path="vendor/oneplus/sm8475-common" remote="github" revision="main" />
+    <project name="Gokulgethu/android_vendor_oneplus_sm8450-common"
+             path="vendor/oneplus/sm8450-common" remote="github" revision="main" />
+</manifest>
