@@ -43,5 +43,5 @@
 
   <!-- QCOM display commonsys-intf (defines display_intf_headers needed by sm8450 display HAL).
        data-ipa-cfg-mgr and dataservices are already in Corvus base manifest — skip. -->
-  <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/display-commonsys-intf" remote="los" revision="lineage-19.1" />
+  <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/display-commonsys-intf" remote="los" revision="lineage-20.0" />
 </manifest>
