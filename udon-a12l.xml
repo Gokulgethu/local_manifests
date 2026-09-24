@@ -37,7 +37,13 @@
   <!-- kernel-build engine: LOS 19.1 vendor/lineage (kernel.mk task; not inherited into products) -->
   <project name="android_vendor_lineage" path="vendor/lineage" remote="los" revision="lineage-19.1" />
 
-  <!-- Lineage HIDL interfaces + devicesettings resource (hardware/oplus @ lineage-20 needs these;
-       use LOS 19.1 versions that match Corvus A12L) -->
+  <!-- Lineage devicesettings resource (hardware/oplus KeyHandler/Doze needs it; Corvus already
+       ships its own vendor.lineage.* interfaces fork at hardware/corvus/interfaces) -->
   <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="los" revision="lineage-19.1" />
+
+  <!-- QCOM commonsys-intf repos that A13 sm8450 display/data HALs expect (display_intf_headers,
+       IPACM, dataservices). Use lineage-19.1 A12L-matching branches. -->
+  <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/display-commonsys-intf" remote="los" revision="lineage-19.1" />
+  <project name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="los" revision="lineage-19.1" />
+  <project name="android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="los" revision="lineage-19.1" />
 </manifest>
