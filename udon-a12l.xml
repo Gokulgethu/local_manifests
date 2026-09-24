@@ -41,9 +41,7 @@
        ships its own vendor.lineage.* interfaces fork at hardware/corvus/interfaces) -->
   <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="los" revision="lineage-19.1" />
 
-  <!-- QCOM commonsys-intf repos that A13 sm8450 display/data HALs expect (display_intf_headers,
-       IPACM, dataservices). Use lineage-19.1 A12L-matching branches. -->
+  <!-- QCOM display commonsys-intf (defines display_intf_headers needed by sm8450 display HAL).
+       data-ipa-cfg-mgr and dataservices are already in Corvus base manifest — skip. -->
   <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/display-commonsys-intf" remote="los" revision="lineage-19.1" />
-  <project name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="los" revision="lineage-19.1" />
-  <project name="android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="los" revision="lineage-19.1" />
 </manifest>
