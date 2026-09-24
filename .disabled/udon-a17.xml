@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OnePlus 11R (udon / CPH2487) — Android 17 device stack (lineage-24.0 generation)
+  rocko5498 proven pins; sm8450-common @ lineage-24.0 (A17 soong adaptation).
+  Used by crave_aosp_builder/build_derpfest17.yml (GitHub Actions build).
+  NOTE: vendor/pixel/gms is tracked by ROM manifests themselves — never listed here.
+-->
+<manifest>
+  <remote name="rocko" fetch="https://github.com/rocko5498" />
+  <remote name="pj" fetch="https://github.com/pjgowtham" />
+  <remote name="arman" fetch="https://github.com/Arman-ATI" />
+  <remote name="icecold" fetch="https://github.com/ICECOLD90191" />
+
+  <project path="device/oneplus/udon"
+           name="android_device_oneplus_udon" remote="rocko"
+           revision="37bf21edd6dbe18f728d929498524b15f4765e79" />
+  <project path="device/oneplus/sm8450-common"
+           name="android_device_oneplus_sm8450-common" remote="rocko"
+           revision="5ffbbdc1eff21dc7abc28c9fe83414659a55118b" />
+  <project path="vendor/oneplus/udon"
+           name="android_vendor_oneplus_udon" remote="rocko"
+           revision="d2b7ad0e82f6e10c21ebbd1949844a273e59711c" />
+  <project path="vendor/oneplus/sm8450-common"
+           name="proprietary_vendor_oneplus_sm8450-common" remote="rocko"
+           revision="b864de7521c0ddce99152a2912c3ca6620149a02" />
+  <project path="kernel/oneplus/sm8450"
+           name="android_kernel_oneplus_sm8450" remote="rocko"
+           revision="7669ea3eea6dcc83be271add1745bbc858a9809e" />
+  <project path="kernel/oneplus/sm8450-modules"
+           name="android_kernel_oneplus_sm8450-modules" remote="pj"
+           revision="ca1104519fcb7e769129e75458a9da4833bcc751" />
+  <project path="kernel/oneplus/sm8450-devicetrees"
+           name="android_kernel_oneplus_sm8450-devicetrees" remote="pj"
+           revision="d8f3eb3fe8f98facd9669aa97d1247f6580e1e58" />
+  <project path="hardware/oplus"
+           name="android_hardware_oplus" remote="arman"
+           revision="45a51fafda4a5cd5aed3321646fdf5bab5421a19" />
+  <project path="hardware/dolby"
+           name="hardware_dolby" remote="icecold"
+           revision="69bb9888e6e36f35d3d2f2d1e67840eefc3433ad" />
+</manifest>
