@@ -7,7 +7,7 @@
 -->
 <manifest>
   <remote name="udon-dev" fetch="https://github.com/udon-development" revision="lineage-20" />
-  <remote name="gitlab" fetch="https://gitlab.com" />
+  <remote name="gitlab" fetch="https://gitlab.com/" />
   <remote name="los" fetch="https://github.com/LineageOS" />
 
   <!-- oplus hw -->
